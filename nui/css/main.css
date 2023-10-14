@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  body {
+    background: #16181e8e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* Inputs */
+  
+  .inputs {
+    .btn {
+      background-color: #333;
+      border: none;
+      color: #fff;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 18px;
+      padding: 11px 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+  
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: #45a049;
+      }
+      &:active {
+        background-color: #225624;
+      }
+    }
+    #time-input {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      padding: 5px;
+      font-size: 18px;
+      display: none;
+    }
+  }
+  
+  .base-timer {
+    position: fixed;
+    bottom: 67px;
+    left: 45%;
+    width: 153px;
+    height: 300px;
+  }
+  .base-timer__svg {
+    transform: scale(-1);
+    border-radius: 50%;
+    border: 1px solid #212428;
+  }
+  
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke-linecap: round;
+  }
+  .base-timer__path-remaining {
+    transform: rotate(90deg);
+    transform-origin: center;
+    transition: 1s linear all;
+    fill-rule: nonzero;
+    stroke: currentColor;
+    stroke-width: 4px;
+    color: #D92626;
+  }
+ 
+  
+  
+  .base-timer__label {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    width: 141px;
+    height: 153px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #D92626;
+  }
+ 
+  /*info*/
+  .inf{
+    position: absolute;
+    font-family: 'Rubik', sans-serif;
+    top: -90px;
+    right: -195px;
+    font-size: 22px;
+}
+.inf span , .e-amb span{
+    color: #D92626;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+}
+
+.e-amb{
+    position: absolute;
+    top: 186px;
+    right: -31px;
+    width: 228px;
+    font-family: 'Rubik', sans-serif;
+}
